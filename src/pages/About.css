@@ -1,10 +1,9 @@
 
 .about-container {
-  padding-top: 5rem; /* pt-20 */
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  padding-top: 5rem; 
 }
 
-/* --- Hero Section --- */
+
 .hero-section {
   padding: 5rem 0; /* py-20 */
   background: linear-gradient(to bottom right, #eff6ff, #faf5ff, #fdf2f8); /* bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 */
@@ -26,9 +25,7 @@
 }
 
 .hero-title-gradient {
-  background: linear-gradient(to right, #2563eb, #7c3aed); /* from-blue-600 to-purple-600 */
-  -webkit-background-clip: text;
-  background-clip: text;
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb); /* from-blue-600 to-purple-600 */
   color: transparent;
 }
 
@@ -41,6 +38,10 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+
+
+
 
 /* --- Stats Section --- */
 .stats-section {
@@ -72,6 +73,10 @@
 .stat-label {
   color: #4b5563; /* text-gray-600 */
 }
+
+
+
+
 
 /* --- Story Section --- */
 .story-section {
@@ -118,8 +123,12 @@
   width: 100%;
   height: auto;
   border-radius: 1rem; /* rounded-2xl */
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-xl */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
+
+
+
+
 
 /* --- Values Section --- */
 .values-section {
@@ -183,6 +192,11 @@
   line-height: 1.625; /* leading-relaxed */
 }
 
+
+
+
+
+
 /* --- Team Section --- */
 .team-section {
   padding: 5rem 0; /* py-20 */
@@ -226,10 +240,6 @@
   padding: 1.5rem; /* p-6 */
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-sm */
   transition: box-shadow 0.3s ease-in-out; /* transition-shadow duration-300 */
-}
-
-.team-member-card:hover {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* hover:shadow-lg */
 }
 
 .team-member-avatar {
@@ -336,55 +346,74 @@
 /* --- Responsive Design (Media Queries) --- */
 
 /* Small screens and up (sm) */
+
+
 @media (min-width: 640px) {
-  .hero-content { padding: 0 1.5rem; }
-  .stats-grid, .story-grid, .values-grid, .team-grid, .cta-content { padding: 0 1.5rem; }
-  
+  .hero-content,
+  .stats-grid,
+  .story-grid,
+  .values-grid,
+  .team-grid,
+  .cta-content {
+    padding: 0 1.5rem;
+  }
+
   .cta-buttons {
-    flex-direction: row; /* sm:flex-row */
+    flex-direction: row;
   }
 }
 
-/* Medium screens and up (md) */
+/* Medium screens and up */
 @media (min-width: 768px) {
   .hero-title {
-    font-size: 3rem; /* md:text-5xl */
+    font-size: 3rem;
     line-height: 1;
   }
+
   .hero-subtitle {
-    font-size: 1.25rem; /* md:text-xl */
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
   .stats-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr)); /* md:grid-cols-4 */
+    grid-template-columns: repeat(4, 1fr);
   }
-  .stat-number {
-    font-size: 2.25rem; /* md:text-4xl */
+
+  .stat-number,
+  .story-content h2,
+  .values-header h2,
+  .team-header h2,
+  .cta-title {
+    font-size: 2.25rem;
     line-height: 2.5rem;
   }
-  .story-content h2, .values-header h2, .team-header h2, .cta-title {
-    font-size: 2.25rem; /* md:text-4xl */
-    line-height: 2.5rem;
-  }
-  .values-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr)); /* md:grid-cols-2 */
-  }
+
+  .values-grid,
   .team-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr)); /* md:grid-cols-2 */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Large screens and up (lg) */
+/* Large screens and up */
 @media (min-width: 1024px) {
-  .hero-content, .stats-grid, .story-grid, .values-grid, .team-grid, .cta-content { padding: 0 2rem; }
+  .hero-content,
+  .stats-grid,
+  .story-grid,
+  .values-grid,
+  .team-grid,
+  .cta-content {
+    padding: 0 2rem;
+  }
 
   .story-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr)); /* lg:grid-cols-2 */
+    grid-template-columns: repeat(2, 1fr);
   }
+
   .values-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr)); /* lg:grid-cols-3 */
+    grid-template-columns: repeat(3, 1fr);
   }
+
   .team-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr)); /* lg:grid-cols-4 */
+    grid-template-columns: repeat(4, 1fr);
   }
 }

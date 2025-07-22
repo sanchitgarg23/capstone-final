@@ -29,7 +29,7 @@ const About = () => {
     },
     {
       name: "Lakshya Bapna",
-      role: "VP of Engineering",
+      role: "Engineer",
       bio: "Full-stack engineer with 2+ years building scalable web applications.",
       avatar: "https://images.unsplash.com/photo-1524081081171-7960da1de373?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGluZGlhbiUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D"
     }
@@ -113,25 +113,19 @@ const About = () => {
             <h2>Our Story</h2>
             <div className="story-text">
               <p>
-                TaskFlow started in 2020 when our founders, Sarah and Michael, were working at different companies 
-                but facing the same problem: existing project management tools were either too complex for small teams 
-                or too simple for growing businesses.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi modi, praesentium facere alias distinctio, accusamus ut fugiat quam nam cumque consequuntur, voluptate impedit temporibus non dignissimos repudiandae voluptatibus necessitatibus error?
               </p>
               <p>
-                After countless late nights and weekend hackathons, they built the first version of TaskFlow. 
-                What started as a side project quickly gained traction when they shared it with friends and colleagues 
-                who were equally frustrated with the status quo.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat expedita error neque veritatis aut hic exercitationem alias corporis quae voluptatibus, quod libero sapiente ex laudantium, voluptas vel ipsam molestiae ipsum?
               </p>
               <p>
-                Today, TaskFlow is used by over 500,000 people across 50+ countries, from solo entrepreneurs to 
-                Fortune 500 companies. But our mission remains the same: to help teams work better together.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, sapiente maxime ratione sunt deleniti sed distinctio recusandae ad cumque quidem quis cum fugiat et dolorem esse provident ipsa? Odio, excepturi!
               </p>
             </div>
           </div>
           <div className="story-image-container">
             <img 
               src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" 
-              alt="Team collaboration" 
               className="story-image"
             />
           </div>
@@ -164,7 +158,7 @@ const About = () => {
         <div className="team-header">
             <h2>Meet Our Team</h2>
             <p>
-              We're a diverse group of designers, engineers, and problem-solvers united by our passion for great software.
+              We're a best group of designers, engineers, and problem-solvers came together by our passion for great software.
             </p>
         </div>
         <div className="team-grid">
@@ -192,6 +186,8 @@ const About = () => {
           <p className="cta-subtitle">
             We're always looking for talented people who share our passion for building great products.
           </p>
+
+          {/* yaha link avail karna ha abhi  */}
           <div className="cta-buttons">
             <a 
               href="#" 
