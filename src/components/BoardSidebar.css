@@ -1,0 +1,143 @@
+/* Sidebar container */
+.sidebar-container {
+  width: 16rem; /* 256px */
+  background-color: white;
+  border-right: 1px solid #e5e7eb; /* border-gray-200 */
+  height: 100%;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.sidebar-content {
+  padding: 1rem; /* 16px */
+}
+
+.sidebar-title {
+  font-size: 1.125rem; /* 18px */
+  font-weight: 600;
+  color: #111827; /* text-gray-900 */
+  margin-bottom: 1rem; /* 16px */
+}
+
+/* Empty state for when there are no boards */
+.empty-state-container {
+  text-align: center;
+  padding: 2rem 0; /* 32px */
+}
+
+.empty-state-icon {
+  color: #9ca3af; /* text-gray-400 */
+  margin-bottom: 0.5rem; /* 8px */
+}
+
+.empty-state-icon svg {
+  height: 3rem; /* 48px */
+  width: 3rem;  /* 48px */
+  margin: 0 auto;
+}
+
+.empty-state-text {
+  font-size: 0.875rem; /* 14px */
+  color: #6b7281; /* text-gray-500 */
+}
+
+.empty-state-subtext {
+  font-size: 0.75rem; /* 12px */
+  color: #9ca3af; /* text-gray-400 */
+  margin-top: 0.25rem; /* 4px */
+}
+
+/* List of boards */
+.boards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* 8px */
+}
+
+.board-item {
+  width: 100%;
+  text-align: left;
+  padding: 0.75rem; /* 12px */
+  border-radius: 0.5rem; /* rounded-lg */
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  border: 2px solid transparent; /* default border */
+  background: none;
+}
+
+.board-item:hover {
+  background-color: #f9fafb; /* hover:bg-gray-50 */
+}
+
+.board-item.active {
+  background-color: #eff6ff; /* bg-blue-50 */
+  border-color: #bfdbfe; /* border-blue-200 */
+}
+
+/* Prevent hover from overriding active state background */
+.board-item.active:hover {
+  background-color: #eff6ff;
+}
+
+.board-item-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* 12px */
+}
+
+.board-item-color-swatch {
+  width: 2rem; /* 32px */
+  height: 2rem; /* 32px */
+  border-radius: 0.25rem; /* rounded */
+  flex-shrink: 0;
+}
+
+.board-item-details {
+  flex: 1;
+  min-width: 0; /* Important for truncation to work */
+}
+
+.board-item-name {
+  font-weight: 500;
+  color: #111827; /* text-gray-900 */
+  /* For text truncation */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.board-item.active .board-item-name {
+  color: #1e3a8a; /* text-blue-900 */
+}
+
+.board-item-meta {
+  font-size: 0.75rem; /* 12px */
+  color: #6b7281; /* text-gray-500 */
+  text-transform: capitalize;
+}
+
+/* Sidebar Stats Section */
+.sidebar-stats {
+  margin-top: 1.5rem; /* 24px */
+  padding-top: 1rem; /* 16px */
+  border-top: 1px solid #e5e7eb; /* border-gray-200 */
+}
+
+.stats-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.875rem; /* 14px */
+  color: #4b5563; /* text-gray-600 */
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem; /* 4px */
+}
+
+.stat-item svg {
+  height: 1rem; /* 16px */
+  width: 1rem; /* 16px */
+}

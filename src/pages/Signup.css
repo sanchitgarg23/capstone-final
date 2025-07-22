@@ -1,0 +1,364 @@
+/* Base and Layout */
+.signup-page {
+    padding-top: 5rem; /* pt-20 */
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #eff6ff, #f3e8ff, #fdf2f8); /* bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 */
+    box-sizing: border-box; /* Ensure padding doesn't add to element's total width/height */
+}
+
+.signup-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1rem; /* px-4 */
+    padding-right: 1rem; /* px-4 */
+    padding-top: 3rem; /* py-12 */
+    padding-bottom: 3rem; /* py-12 */
+    /* For smaller screens, adjust padding as needed */
+    /* @media (min-width: 640px) { padding-left: 1.5rem; padding-right: 1.5rem; } */ /* sm:px-6 */
+    /* @media (min-width: 1024px) { padding-left: 2rem; padding-right: 2rem; } */ /* lg:px-8 */
+}
+
+.signup-card-wrapper {
+    max-width: 28rem; /* max-w-md */
+    width: 100%; /* w-full */
+}
+
+/* Header Section */
+.signup-header {
+    text-align: center;
+    margin-bottom: 2rem; /* mb-8 */
+}
+
+.signup-logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem; /* mb-6 */
+}
+
+.signup-logo-wrapper > div {
+    height: 3rem; /* h-12 */
+    width: 3rem; /* w-12 */
+    background: linear-gradient(to bottom right, #3b82f6, #9333ea); /* bg-gradient-to-br from-blue-500 to-purple-600 */
+    border-radius: 0.5rem; /* rounded-lg */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-logo-icon {
+    height: 1.75rem; /* h-7 */
+    width: 1.75rem; /* w-7 */
+    color: #fff; /* text-white */
+}
+
+.signup-title {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 700; /* font-bold */
+    color: #1f2937; /* text-gray-900 */
+    margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.signup-subtitle {
+    color: #4b5563; /* text-gray-600 */
+}
+
+/* Form Card */
+.signup-form-card {
+    background-color: #fff; /* bg-white */
+    border-radius: 1rem; /* rounded-2xl */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-xl */
+    padding: 2rem; /* p-8 */
+}
+
+/* Form Spacing */
+.form-space-y-6 > *:not(:last-child) {
+    margin-bottom: 1.5rem; /* space-y-6 */
+}
+
+/* Grid for Name Fields */
+.form-grid-cols-2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem; /* gap-4 */
+}
+
+/* Form Labels */
+.form-label {
+    display: block;
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 500; /* font-medium */
+    color: #374151; /* text-gray-700 */
+    margin-bottom: 0.5rem; /* mb-2 */
+}
+
+/* Input Fields */
+.form-input-text-icon,
+.form-input-text,
+.form-input-password {
+    width: 100%; /* w-full */
+    padding-top: 0.75rem; /* py-3 */
+    padding-bottom: 0.75rem; /* py-3 */
+    border: 1px solid #d1d5db; /* border border-gray-300 */
+    border-radius: 0.5rem; /* rounded-lg */
+    transition: all 0.2s ease-in-out; /* transition-all duration-200 */
+}
+
+.form-input-text-icon {
+    padding-left: 2.5rem; /* pl-10 */
+    padding-right: 1rem; /* pr-4 */
+}
+
+.form-input-text {
+    padding-left: 1rem; /* px-4 */
+    padding-right: 1rem; /* px-4 */
+}
+
+.form-input-password {
+    padding-left: 2.5rem; /* pl-10 */
+    padding-right: 3rem; /* pr-12 */
+}
+
+/* Input Focus Styles */
+.form-input-text-icon:focus,
+.form-input-text:focus,
+.form-input-password:focus {
+    outline: none; /* focus:ring-2 focus:ring-blue-500 focus:border-transparent */
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* Custom ring effect */
+    border-color: transparent; /* focus:border-transparent */
+}
+
+/* Input with Icon Wrapper */
+.input-with-icon {
+    position: relative;
+}
+
+.input-icon-left {
+    position: absolute;
+    inset-block-start: 0; /* top-0 */
+    inset-block-end: 0; /* bottom-0 */
+    inset-inline-start: 0; /* left-0 */
+    padding-inline-start: 0.75rem; /* pl-3 */
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+
+.input-icon {
+    height: 1.25rem; /* h-5 */
+    width: 1.25rem; /* w-5 */
+    color: #9ca3af; /* text-gray-400 */
+}
+
+/* Password Toggle Button */
+.password-toggle-button {
+    position: absolute;
+    inset-block-start: 0; /* top-0 */
+    inset-block-end: 0; /* bottom-0 */
+    inset-inline-end: 0; /* right-0 */
+    padding-inline-end: 0.75rem; /* pr-3 */
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.input-icon-hover {
+    height: 1.25rem; /* h-5 */
+    width: 1.25rem; /* w-5 */
+    color: #9ca3af; /* text-gray-400 */
+    transition: color 0.2s ease-in-out; /* hover:text-gray-600 */
+}
+
+.input-icon-hover:hover {
+    color: #4b5563; /* hover:text-gray-600 */
+}
+
+/* Password Strength Meter */
+.password-strength-meter {
+    margin-top: 0.5rem; /* mt-2 */
+}
+
+.password-strength-bar-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* space-x-2 */
+    flex: 1; /* flex-1 */
+    background-color: #e5e7eb; /* bg-gray-200 */
+    border-radius: 9999px; /* rounded-full */
+    height: 0.5rem; /* h-2 */
+}
+
+.password-strength-bar {
+    height: 0.5rem; /* h-2 */
+    border-radius: 9999px; /* rounded-full */
+    transition: all 0.3s ease-in-out; /* transition-all duration-300 */
+}
+
+/* Strength Colors */
+.strength-weak {
+    background-color: #ef4444; /* bg-red-500 */
+}
+.strength-medium {
+    background-color: #f59e0b; /* bg-yellow-500 */
+}
+.strength-strong {
+    background-color: #22c55e; /* bg-green-500 */
+}
+
+.password-strength-text {
+    font-size: 0.75rem; /* text-xs */
+    font-weight: 500; /* font-medium */
+}
+
+/* Strength Text Colors */
+.text-red {
+    color: #dc2626; /* text-red-600 */
+}
+.text-yellow {
+    color: #d97706; /* text-yellow-600 */
+}
+.text-green {
+    color: #16a34a; /* text-green-600 */
+}
+
+/* Password Mismatch Error */
+.password-mismatch-error {
+    margin-top: 0.25rem; /* mt-1 */
+    font-size: 0.875rem; /* text-sm */
+    color: #dc2626; /* text-red-600 */
+}
+
+/* Checkbox Group */
+.checkbox-group > *:not(:last-child) {
+    margin-bottom: 0.75rem; /* space-y-3 */
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: flex-start; /* items-start */
+}
+
+.form-checkbox {
+    height: 1rem; /* h-4 */
+    width: 1rem; /* w-4 */
+    color: #3b82f6; /* text-blue-600 */
+    border-color: #d1d5db; /* border-gray-300 */
+    border-radius: 0.25rem; /* rounded */
+    margin-top: 0.125rem; /* mt-0.5 */
+    /* Add focus ring manually if needed, as Tailwind does it with pseudo-classes */
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    transition: all 0.15s ease-in-out;
+}
+
+.form-checkbox:focus {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px rgba(59, 130, 246, 0.5); /* focus:ring-blue-500 */
+}
+
+.checkbox-label {
+    margin-left: 0.5rem; /* ml-2 */
+    display: block;
+    font-size: 0.875rem; /* text-sm */
+    color: #374151; /* text-gray-700 */
+}
+
+.link-text {
+    color: #3b82f6; /* text-blue-600 */
+    text-decoration: none;
+    transition: color 0.2s ease-in-out; /* hover:text-blue-500 */
+}
+
+.link-text:hover {
+    color: #2563eb; /* hover:text-blue-500 */
+}
+
+/* Submit Button */
+.submit-button {
+    width: 100%; /* w-full */
+    background: linear-gradient(to right, #2563eb, #9333ea); /* bg-gradient-to-r from-blue-600 to-purple-600 */
+    color: #fff; /* text-white */
+    padding-top: 0.75rem; /* py-3 */
+    padding-bottom: 0.75rem; /* py-3 */
+    border-radius: 0.5rem; /* rounded-lg */
+    font-weight: 600; /* font-semibold */
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out; /* transition-all duration-200 */
+    transform: scale(1); /* Initial scale for hover effect */
+}
+
+.submit-button:hover:not(:disabled) {
+    background: linear-gradient(to right, #1d4ed8, #7e22ce); /* hover:from-blue-700 hover:to-purple-700 */
+    transform: scale(1.05); /* hover:scale-105 */
+}
+
+.submit-button:disabled {
+    opacity: 0.5; /* disabled:opacity-50 */
+    cursor: not-allowed; /* disabled:cursor-not-allowed */
+    transform: none; /* disabled:transform-none */
+}
+
+/* Benefits Section */
+.benefits-section {
+    margin-top: 1.5rem; /* mt-6 */
+    padding: 1rem; /* p-4 */
+    background-color: #eff6ff; /* bg-blue-50 */
+    border-radius: 0.5rem; /* rounded-lg */
+}
+
+.benefits-title {
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 600; /* font-semibold */
+    color: #1f2937; /* text-gray-900 */
+    margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.benefits-list {
+    list-style: none; /* remove default list style */
+    padding: 0;
+    margin: 0;
+}
+
+.benefits-list > *:not(:last-child) {
+    margin-bottom: 0.25rem; /* space-y-1 */
+}
+
+.benefits-list-item {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem; /* text-sm */
+    color: #4b5563; /* text-gray-600 */
+}
+
+.benefits-icon {
+    height: 1rem; /* h-4 */
+    width: 1rem; /* w-4 */
+    color: #22c55e; /* text-green-500 */
+    margin-right: 0.5rem; /* mr-2 */
+    flex-shrink: 0; /* flex-shrink-0 */
+}
+
+/* Sign In Link Section */
+.signin-link-wrapper {
+    margin-top: 1.5rem; /* mt-6 */
+    text-align: center;
+}
+
+.signin-text {
+    font-size: 0.875rem; /* text-sm */
+    color: #4b5563; /* text-gray-600 */
+}
+
+.link-text-bold {
+    font-weight: 500; /* font-medium */
+    color: #3b82f6; /* text-blue-600 */
+    text-decoration: none;
+    transition: color 0.2s ease-in-out; /* hover:text-blue-500 */
+}
+
+.link-text-bold:hover {
+    color: #2563eb; /* hover:text-blue-500 */
+}

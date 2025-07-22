@@ -1,0 +1,250 @@
+/* ============================================= */
+/* General & Shared Styles              */
+/* ============================================= */
+.btn {
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  font-family: inherit;
+}
+
+.btn-sm {
+  padding: 0.375rem 0.75rem; /* py-1.5 px-3 */
+  font-size: 0.875rem; /* text-sm */
+  border-radius: 0.25rem; /* rounded */
+}
+
+.btn-primary {
+  background-color: #2563eb; /* bg-blue-600 */
+  color: white;
+}
+.btn-primary:hover {
+  background-color: #1d4ed8; /* hover:bg-blue-700 */
+}
+
+.btn-secondary {
+  color: #4b5563; /* text-gray-600 */
+  background-color: transparent;
+}
+.btn-secondary:hover {
+  background-color: #f3f4f6; /* hover:bg-gray-100 */
+}
+
+/* ============================================= */
+/* Board View Styles               */
+/* ============================================= */
+
+.board-view-container {
+  flex: 1;
+  height: 100%;
+  overflow-x: auto;
+}
+
+.board-view-content {
+  padding: 1.5rem; /* p-6 */
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Board Header */
+.board-header {
+  margin-bottom: 1.5rem; /* mb-6 */
+}
+
+.board-title {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 700; /* font-bold */
+  color: #111827; /* text-gray-900 */
+  margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.board-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* space-x-4 */
+  font-size: 0.875rem; /* text-sm */
+  color: #4b5563; /* text-gray-600 */
+}
+
+.board-meta-template {
+  text-transform: capitalize;
+}
+
+/* Main content area with lists */
+.lists-container {
+  display: flex;
+  gap: 1rem; /* space-x-4 */
+  height: 100%;
+  padding-bottom: 1.5rem; /* pb-6 to prevent scrollbar overlap */
+  align-items: flex-start; /* Aligns lists to the top */
+}
+
+/* ============================================= */
+/* List Component Styles             */
+/* ============================================= */
+
+.list-wrapper {
+  flex-shrink: 0;
+  width: 18rem; /* w-72 */
+  max-height: 100%;
+}
+
+.list-component {
+  background-color: #f3f4f6; /* bg-gray-100 */
+  border-radius: 0.5rem; /* rounded-lg */
+  padding: 0.75rem; /* p-3 */
+  height: fit-content;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem; /* mb-3 */
+  flex-shrink: 0;
+}
+
+.list-title {
+  font-weight: 600; /* font-semibold */
+  color: #111827; /* text-gray-900 */
+  font-size: 0.875rem; /* text-sm */
+}
+
+.list-options-button {
+  padding: 0.25rem; /* p-1 */
+  border-radius: 0.25rem; /* rounded */
+  transition: background-color 0.2s;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.list-options-button:hover {
+  background-color: #e5e7eb; /* hover:bg-gray-200 */
+}
+.list-options-button svg {
+  height: 1rem; /* h-4 */
+  width: 1rem; /* w-4 */
+  color: #4b5563; /* text-gray-600 */
+  display: block;
+}
+
+/* Cards Container */
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* space-y-2 */
+  margin-bottom: 0.75rem; /* mb-3 */
+  overflow-y: auto; /* Allows cards to scroll within the list */
+  flex-shrink: 1;
+}
+
+.card-item {
+  background-color: white;
+  padding: 0.75rem; /* p-3 */
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-sm */
+  border: 1px solid #e5e7eb; /* border-gray-200 */
+  transition: box-shadow 0.2s;
+  cursor: pointer;
+}
+.card-item:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* hover:shadow-md */
+}
+.card-title {
+  font-size: 0.875rem; /* text-sm */
+  color: #111827; /* text-gray-900 */
+  word-wrap: break-word;
+}
+
+/* ============================================= */
+/* Add List/Card Styles              */
+/* ============================================= */
+
+/* Generic form wrapper for adding a list or card */
+.add-form {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+}
+
+/* Generic input/textarea for new items */
+.add-item-input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+.add-item-input:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: 0 0 0 2px #3b82f6; /* focus:ring-2 focus:ring-blue-500 */
+}
+
+/* Textarea specific */
+.add-item-textarea {
+  resize: none;
+}
+
+.add-item-actions {
+  display: flex;
+  gap: 0.5rem; /* space-x-2 */
+  margin-top: 0.5rem;
+}
+
+/* "Add another list" button */
+.add-list-button {
+  width: 100%;
+  padding: 0.75rem; /* p-3 */
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 0.5rem; /* rounded-lg */
+  border: 2px dashed #d1d5db; /* border-dashed border-gray-300 */
+  color: #4b5563; /* text-gray-600 */
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.add-list-button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-color: #9ca3af; /* hover:border-gray-400 */
+  color: #1f2937; /* hover:text-gray-800 */
+}
+.add-list-button svg {
+  height: 1.25rem; /* h-5 */
+  width: 1.25rem; /* w-5 */
+  margin: 0 auto 0.25rem; /* mx-auto mb-1 */
+}
+.add-list-button-text {
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+}
+
+/* "Add a card" button */
+.add-card-button {
+  width: 100%;
+  padding: 0.5rem; /* p-2 */
+  color: #4b5563; /* text-gray-600 */
+  background-color: transparent;
+  border-radius: 0.25rem; /* rounded */
+  transition: background-color 0.2s;
+  font-size: 0.875rem; /* text-sm */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* space-x-2 */
+  border: none;
+  cursor: pointer;
+  margin-top: 0.25rem;
+}
+.add-card-button:hover {
+  background-color: #e5e7eb; /* hover:bg-gray-200 */
+}
+.add-card-button svg {
+  height: 1rem; /* h-4 */
+  width: 1rem; /* w-4 */
+}
