@@ -59,23 +59,25 @@ const CalendarPage = () => {
   const goToToday = () => {
     setCurrentView({ ...currentView, date: new Date() });
   };
-
+// clikc the date when we select it
   const handleDateClick = (date) => {
     setSelectedDate(date);
   };
-
+// helpst to create the event
   const handleCreateEvent = () => {
     setEditingEvent(null);
     setIsEventModalOpen(true);
   };
 
+  // this will help to edit the event
   const handleEditEvent = (event) => {
     setEditingEvent(event);
     setIsEventModalOpen(true);
   };
-
+// help to save the event 
   const handleSaveEvent = (eventData) => {
     if (editingEvent) {
+      // will check if data is there then only it will create
       updateEvent(editingEvent.id, eventData);
     } else {
       createEvent(eventData);
@@ -83,7 +85,7 @@ const CalendarPage = () => {
     setIsEventModalOpen(false);
     setEditingEvent(null);
   };
-
+// helps to delete the event
   const handleDeleteEvent = (eventId) => {
     deleteEvent(eventId);
     setIsEventModalOpen(false);

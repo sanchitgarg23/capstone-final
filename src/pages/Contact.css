@@ -241,7 +241,7 @@
   margin-right: 0.5rem; /* mr-2 */
 }
 
-/* --- Office Locations Section --- */
+
 .offices-section {
   padding: 5rem 0; /* py-20 */
   background-color: #f9fafb; /* bg-gray-50 */
@@ -320,7 +320,7 @@
   white-space: pre-line; /* whitespace-pre-line */
 }
 
-/* --- Responsive Design (Media Queries) --- */
+
 @media (min-width: 640px) { /* sm */
   .hero-content, .contact-form-grid, .offices-grid {
     padding: 0 1.5rem;

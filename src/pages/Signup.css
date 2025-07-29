@@ -2,8 +2,8 @@
 .signup-page {
     padding-top: 5rem; /* pt-20 */
     min-height: 100vh;
-    background: linear-gradient(to bottom right, #eff6ff, #f3e8ff, #fdf2f8); /* bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 */
-    box-sizing: border-box; /* Ensure padding doesn't add to element's total width/height */
+    background:  #fdf2f8; 
+    box-sizing: border-box; 
 }
 
 .signup-container {
@@ -14,9 +14,7 @@
     padding-right: 1rem; /* px-4 */
     padding-top: 3rem; /* py-12 */
     padding-bottom: 3rem; /* py-12 */
-    /* For smaller screens, adjust padding as needed */
-    /* @media (min-width: 640px) { padding-left: 1.5rem; padding-right: 1.5rem; } */ /* sm:px-6 */
-    /* @media (min-width: 1024px) { padding-left: 2rem; padding-right: 2rem; } */ /* lg:px-8 */
+
 }
 
 .signup-card-wrapper {
@@ -40,7 +38,7 @@
 .signup-logo-wrapper > div {
     height: 3rem; /* h-12 */
     width: 3rem; /* w-12 */
-    background: linear-gradient(to bottom right, #3b82f6, #9333ea); /* bg-gradient-to-br from-blue-500 to-purple-600 */
+    background: #9333ea; /* bg-gradient-to-br from-blue-500 to-purple-600 */
     border-radius: 0.5rem; /* rounded-lg */
     display: flex;
     align-items: center;
@@ -125,7 +123,7 @@
 .form-input-text:focus,
 .form-input-password:focus {
     outline: none; /* focus:ring-2 focus:ring-blue-500 focus:border-transparent */
-    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* Custom ring effect */
+    box-shadow: 0 0 0 2px ;
     border-color: transparent; /* focus:border-transparent */
 }
 
@@ -187,7 +185,7 @@
     gap: 0.5rem; /* space-x-2 */
     flex: 1; /* flex-1 */
     background-color: #e5e7eb; /* bg-gray-200 */
-    border-radius: 9999px; /* rounded-full */
+    border-radius: 10000px; /* rounded-full */
     height: 0.5rem; /* h-2 */
 }
 
@@ -248,14 +246,14 @@
     border-color: #d1d5db; /* border-gray-300 */
     border-radius: 0.25rem; /* rounded */
     margin-top: 0.125rem; /* mt-0.5 */
-    /* Add focus ring manually if needed, as Tailwind does it with pseudo-classes */
+
     outline: 2px solid transparent;
     outline-offset: 2px;
     transition: all 0.15s ease-in-out;
 }
 
 .form-checkbox:focus {
-    box-shadow: 0 0 0 2px #fff, 0 0 0 4px rgba(59, 130, 246, 0.5); /* focus:ring-blue-500 */
+    box-shadow: 0 0 0 2px; 
 }
 
 .checkbox-label {
@@ -317,7 +315,7 @@
 }
 
 .benefits-list {
-    list-style: none; /* remove default list style */
+    list-style: none; 
     padding: 0;
     margin: 0;
 }
@@ -343,22 +341,22 @@
 
 /* Sign In Link Section */
 .signin-link-wrapper {
-    margin-top: 1.5rem; /* mt-6 */
+    margin-top: 1.5rem; 
     text-align: center;
 }
 
 .signin-text {
-    font-size: 0.875rem; /* text-sm */
-    color: #4b5563; /* text-gray-600 */
+    font-size: 0.875rem; 
+    color: #4b5563; 
 }
 
 .link-text-bold {
-    font-weight: 500; /* font-medium */
-    color: #3b82f6; /* text-blue-600 */
+    font-weight: 500; 
+    color: #3b82f6; 
     text-decoration: none;
-    transition: color 0.2s ease-in-out; /* hover:text-blue-500 */
+    transition: color 0.2s ease-in-out; 
 }
 
 .link-text-bold:hover {
-    color: #2563eb; /* hover:text-blue-500 */
+    color: #2563eb; 
 }

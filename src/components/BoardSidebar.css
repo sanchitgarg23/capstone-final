@@ -1,4 +1,4 @@
-/* Sidebar container */
+
 .sidebar-container {
   width: 16rem; /* 256px */
   background-color: white;
@@ -19,7 +19,7 @@
   margin-bottom: 1rem; /* 16px */
 }
 
-/* Empty state for when there are no boards */
+
 .empty-state-container {
   text-align: center;
   padding: 2rem 0; /* 32px */
@@ -47,7 +47,7 @@
   margin-top: 0.25rem; /* 4px */
 }
 
-/* List of boards */
+
 .boards-list {
   display: flex;
   flex-direction: column;
@@ -57,24 +57,24 @@
 .board-item {
   width: 100%;
   text-align: left;
-  padding: 0.75rem; /* 12px */
-  border-radius: 0.5rem; /* rounded-lg */
+  padding: 0.75rem; 
+  border-radius: 0.5rem; 
   transition: all 0.2s ease-in-out;
   cursor: pointer;
-  border: 2px solid transparent; /* default border */
+  border: 2px solid transparent; 
   background: none;
 }
 
 .board-item:hover {
-  background-color: #f9fafb; /* hover:bg-gray-50 */
+  background-color: #f9fafb;
 }
 
 .board-item.active {
-  background-color: #eff6ff; /* bg-blue-50 */
-  border-color: #bfdbfe; /* border-blue-200 */
+  background-color: #eff6ff;
+  border-color: #bfdbfe; 
 }
 
-/* Prevent hover from overriding active state background */
+
 .board-item.active:hover {
   background-color: #eff6ff;
 }
@@ -82,32 +82,31 @@
 .board-item-content {
   display: flex;
   align-items: center;
-  gap: 0.75rem; /* 12px */
+  gap: 0.75rem; 
 }
 
 .board-item-color-swatch {
-  width: 2rem; /* 32px */
-  height: 2rem; /* 32px */
-  border-radius: 0.25rem; /* rounded */
+  width: 2rem; 
+  height: 2rem; 
+  border-radius: 0.25rem;
   flex-shrink: 0;
 }
 
 .board-item-details {
   flex: 1;
-  min-width: 0; /* Important for truncation to work */
+  min-width: 0; 
 }
 
 .board-item-name {
   font-weight: 500;
-  color: #111827; /* text-gray-900 */
-  /* For text truncation */
+  color: #111827; 
   overflow: hidden;
-  text-overflow: ellipsis;
+
   white-space: nowrap;
 }
 
 .board-item.active .board-item-name {
-  color: #1e3a8a; /* text-blue-900 */
+  color: #1e3a8a; 
 }
 
 .board-item-meta {
@@ -116,7 +115,7 @@
   text-transform: capitalize;
 }
 
-/* Sidebar Stats Section */
+
 .sidebar-stats {
   margin-top: 1.5rem; /* 24px */
   padding-top: 1rem; /* 16px */

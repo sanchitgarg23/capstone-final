@@ -1,7 +1,7 @@
 
 
 import React, { useState } from 'react';
-import { Search, Plus, User, Trello, Home } from 'lucide-react';
+import { Search, Plus, User, Home,CheckCircle } from 'lucide-react';
 import TemplateSelector from './TemplateSelector';
 import BoardNameModal from './BoardNameModal';
 
@@ -45,8 +45,8 @@ const Navbar = ({
             {/* Left section - Logo/Brand */}
             <div className="flex items-center space-x-8">
               <div className="flex items-center space-x-2">
-                <div className="p-2 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg">
-                  <Trello className="h-6 w-6 text-white" />
+                <div className="p-2 bg-purple-600 rounded-lg">
+                  <CheckCircle className="h-6 w-6 text-white" />
                 </div>
                 <span className="text-xl font-bold text-gray-900 tracking-tight">
                   TaskFlow

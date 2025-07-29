@@ -51,7 +51,7 @@
 
 .header-icon-container {
   padding: 0.5rem; /* p-2 */
-  background-image: linear-gradient(to right, #2563eb, #4f46e5); /* bg-gradient-to-r from-blue-600 to-indigo-600 */
+  background-image:  #4f46e5; 
   border-radius: 0.5rem; /* rounded-lg */
 }
 
@@ -207,7 +207,7 @@
   outline: 2px solid transparent;
   outline-offset: 2px;
   border-color: transparent;
-  box-shadow: 0 0 0 2px #3b82f6; /* focus:ring-2 focus:ring-blue-500 */
+  box-shadow: 0 0 0 2px #3b82f6; 
 }
 
 .filter-select {
@@ -227,12 +227,12 @@
 
 @media (min-width: 1024px) {
   .main-content {
-    grid-template-columns: repeat(4, minmax(0, 1fr)); /* lg:grid-cols-4 */
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 .calendar-grid-container {
-  grid-column: span 1 / span 1;
+  grid-column: span 1 ;
 }
 
 @media (min-width: 1024px) {
@@ -242,11 +242,11 @@
 }
 
 .sidebar-container {
-  grid-column: span 1 / span 1;
+  grid-column: span 1 ;
 }
 
 @media (min-width: 1024px) {
   .sidebar-container {
-    grid-column: span 1 / span 1; /* lg:col-span-1 */
+    grid-column: span 1 ;
   }
 }
